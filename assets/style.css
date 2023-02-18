@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+    font-family: "noto sans jp regular";
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 15%;
+    
+}
+.container__sidebar {
+    font-size: 15px;
+    padding-top: 10px;
+    border: 2px solid #E1E8EF;
+    margin-right: 30px;
+}
+
+.sidebar__top {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.button button {
+    padding: 5px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #42A7C2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+.button button:hover {
+    background-color: #A0D3E0;
+    color: #42A7C2;
+    cursor: pointer;
+}
+
+.sidebar__menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu__item {
+    padding: 20px;
+    border-top: 1px solid #E1E8EF;
+    transition-duration: 0.4s;
+    
+}
+
+.menu__item:hover {
+    background-color: #E1E8EF;
+    color: #A0D3E0;
+}
+
+.menu__item a {
+    font-weight: 400;
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+                                                            /* Content */
+.container__content {
+    padding-top: 10px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header__navbar {
+    padding: 10px;
+    font-size: 13px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__navbar .navbar__home{
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__navbar a:hover {
+    color: #42A7C2;
+
+}
+
+.navbar__option a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+.navbar__option a:hover {
+    color: #42A7C2;
+}
+
+.header__search {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAF1F7;
+    border-radius: 50px;
+}
+.search__input {
+    padding: 10px 25% 10px 20px;
+    margin: 0 15px;
+    border: 1px solid #E1E8EF;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+.search__input input{
+    border: none;
+}
+
+.search__input input::placeholder{
+    color: #AFAFAF;
+}
+
+.search__input input:focus{
+    border: none;
+    outline: none;
+}
+
+.header__search button {
+    padding: 10px;
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #42A7C2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+.header__search button:hover {
+    background-color: #A0D3E0;
+    color: #42A7C2;
+    cursor: pointer;
+}
+
+.main {
+    margin: 30px 0;
+    color: #42A7C2;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.item__content {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    width: 100%;
+    padding: 10px;
+}
+.title {
+    padding-left: 30px;
+}
+
+.title h3 {
+    color: #333333;
+}
+.desc__tutorial .group__card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc__tutorial .group__card button {
+    background-color: #FFFFFF;
+    color: #42A7C2;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid #42A7C2;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+}
+.desc__tutorial .group__card button:hover {
+    background-color: #EAF1F7;
+    cursor: pointer;
+}
+
+
+.desc__tutorial .group__card .card img {
+    margin-bottom: 10px;
+}
+
+.desc__explain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.desc__explain .detail {
+    margin-top: 20px;
+    width: 100%;
+    border-top: 1px solid #42A7C2;
+    padding-top: 20px;
+}
+.desc__explain .detail .title {
+    padding: 21px 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 4px solid #42A7C2;
+}
+
+.desc__explain .detail .group__card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc__explain .detail .group__card button {
+    background-color: #EAF1F7;
+    color: #42A7C2;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 22%;
+}
+
+.desc__explain .detail .group__card button:hover {
+    background-color: #A0D3E0;
+    cursor: pointer;
+}
+
+.desc__explain .detail .group__card .card img {
+    margin-bottom: 10px;
+}
+.desc__function {
+    display: flex;
+    flex-wrap: wrap;
+}
+.desc__function .detail {
+    margin: 20px 20px 20px 0;
+    width: 40%;
+    border-top: 1px solid #42A7C2;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    text-align: left;
+}
+.desc__function .detail .title {
+    padding: 20px 0;
+    /* width: 100%; */
+    font-weight: bold;
+    font-size: 20px;
+    border-top: 4px solid #42A7C2;
+}
+
+.list__item:hover {
+    cursor: pointer;
+    color: #66b0c4;
+    border-radius: 5px;
+    background-color: #A0D3E0;
+}
